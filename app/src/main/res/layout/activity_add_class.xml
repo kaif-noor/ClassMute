@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingTop="6dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="6dp"
+                android:text="Cancel"
+                android:textColor="@color/primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Add class"
+                android:textColor="@color/text_main"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/SectionLabel"
+                android:layout_marginTop="26dp"
+                android:text="Class name" />
+
+            <EditText
+                android:id="@+id/name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:hint="e.g. Operating Systems"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="@color/text_main"
+                android:textColorHint="@color/hint"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/SectionLabel"
+                android:layout_marginTop="26dp"
+                android:text="Days" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/day0"
+                    style="@style/DayCircle"
+                    android:text="M" />
+
+                <TextView
+                    android:id="@+id/day1"
+                    style="@style/DayCircle"
+                    android:text="T" />
+
+                <TextView
+                    android:id="@+id/day2"
+                    style="@style/DayCircle"
+                    android:text="W" />
+
+                <TextView
+                    android:id="@+id/day3"
+                    style="@style/DayCircle"
+                    android:text="T" />
+
+                <TextView
+                    android:id="@+id/day4"
+                    style="@style/DayCircle"
+                    android:text="F" />
+
+                <TextView
+                    android:id="@+id/day5"
+                    style="@style/DayCircle"
+                    android:text="S" />
+
+                <TextView
+                    android:id="@+id/day6"
+                    style="@style/DayCircle"
+                    android:text="S" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/SectionLabel"
+                android:layout_marginTop="26dp"
+                android:text="Time" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/start_box"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_card"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Starts"
+                        android:textColor="@color/text_soft"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/start_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/text_main"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/end_box"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_card"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ends"
+                        android:textColor="@color/text_soft"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/end_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/text_main"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/delete_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="Delete class"
+                android:textColor="@color/danger"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/save_button"
+        style="@style/BigButton"
+        android:text="Save" />
+
+</LinearLayout>

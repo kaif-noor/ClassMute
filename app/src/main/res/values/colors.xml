@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#4F46E5</color>
+    <color name="primary_light">#7468F0</color>
+    <color name="primary_dark">#3F37C9</color>
+    <color name="header_text_soft">#DDDAFF</color>
+    <color name="background">#F4F5FA</color>
+    <color name="card">#FFFFFF</color>
+    <color name="border">#E3E5EE</color>
+    <color name="text_main">#1C1F2A</color>
+    <color name="text_soft">#6B7085</color>
+    <color name="hint">#A3A7B7</color>
+    <color name="now_green">#12924A</color>
+    <color name="now_green_bg">#E2F6EA</color>
+    <color name="warning_bg">#FFF2DD</color>
+    <color name="warning_text">#7A4300</color>
+    <color name="danger">#D93636</color>
+    <color name="ripple">#224F46E5</color>
+    <color name="ripple_light">#33FFFFFF</color>
+</resources>
